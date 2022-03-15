@@ -29,7 +29,7 @@ session_start();
                 <input type="submit" value="Мои заявки" name="more" id="btn_all-messages" class="options_btn-form">
             </form><br>
 
-            <form action="index2.php" method="POST">
+            <form action="index.php" method="POST">
                 <input type="submit" value="На главную" name="more" class="options_btn-form">
             </form><br>
         </div>

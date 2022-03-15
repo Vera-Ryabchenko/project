@@ -35,7 +35,7 @@
             <!--<input type="button" value="Зарегистрироваться" class="btn-form">-->
         </form>
         <p id="ans"></p>
-        <form action="index2.php">
+        <form action="index.php">
             <button type="submit" class="btn-form" id="toindex2">На главную</button>
         </form>
     </div>
