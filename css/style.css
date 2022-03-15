@@ -1,0 +1,321 @@
+@font-face {
+  font-family: "Arial";
+  src: local("Arial");
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1%;
+  align-items: center;
+  background-color: beige;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-forms {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-form {
+  padding-right: 50px;
+}
+
+.header-btn {
+  border-radius: 50px;
+  height: 25px;
+  width: 100px;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1%;
+  align-items: center;
+  height: 40vh;
+}
+
+.main-info-problem {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  align-items: center;
+}
+
+.main-info-img {
+  width: 50%;
+  height: 40vh;
+  background-image: url(../img/city.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main_messages_counter {
+  padding: 50px;
+  text-align: center;
+  background-color: beige;
+  font-family: "Arial", sans-serif;
+  padding-bottom: 5px;
+}
+
+.messages_counter {
+  font-size: 36px;
+  color: green;
+  font-weight: bold;
+}
+
+.main-problem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+}
+.main-problem-back {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-problem-img1 {
+  width: 400px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-problem-img2 {
+  display: none;
+  width: 400px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hover:hover .main-problem-img1 {
+  display: none;
+  transition: all 0s ease-out;
+}
+
+.hover:hover .main-problem-img2 {
+  display: block;
+  transform: scale(1.3);
+  transition: all 1s ease;
+}
+
+.feedback-img {
+  width: 300px;
+  height: auto;
+}
+
+.main-info-problem-btn {
+  border-radius: 50px;
+  height: 25px;
+  padding: 0px 20px;
+}
+
+footer {
+  background-color: beige;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.reg-heading,
+.auth-heading {
+  text-align: center;
+}
+
+.reg-form,
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.form-input {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+.btn-form,
+.filter-message {
+  border-radius: 50px;
+  background-color: rgba(27, 59, 120, 0.79);
+  color: white;
+  padding: 5px 20px;
+}
+
+/*Оформление личного кабинета options.php*/
+.body_options {
+  background-image: url("../img/pattern.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.options_p {
+  text-align: center;
+  font-size: 28px;
+  line-height: 48px;
+}
+
+.options_btn {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.options_btn-form {
+  border-radius: 50px;
+  background-color: rgba(27, 59, 120, 0.79);
+  color: white;
+  padding: 5px 20px;
+  font-size: 20px;
+}
+
+.options_btn-form:focus {
+  border-radius: 50px;
+  background: transparent;
+  border: none;
+  color: rgba(27, 59, 120, 0.79);
+  font-weight: bold;
+  text-align: 36px;
+  padding: 5px 20px;
+  font-size: 20px;
+  box-shadow: 0 -5px 0 rgba(27, 59, 120, 0.79);
+}
+
+#content-lk {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+}
+
+#lk-messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-start;
+  text-align: center;
+  align-items: flex-start;
+}
+
+/*Оформление страницы оформления заявки feedbackform.php*/
+textarea {
+  background: none;
+  border-color: rgba(27, 59, 120, 0.79);
+  border-width: 3px;
+}
+
+#current_date_time {
+  background: none;
+  border-color: rgba(27, 59, 120, 0.79);
+}
+
+.select {
+  background: none;
+  border-color: rgba(27, 59, 120, 0.79);
+}
+
+/*Оформление regform.php*/
+#toindex2 {
+  visibility: hidden;
+}
+
+.error {
+  color: red;
+  animation: ani 2.5s forwards;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.input-error {
+  background-color: yellow;
+}
+
+/*Оформление usermessages.php*/
+.lk {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  border-color: rgba(27, 59, 120, 0.79);
+  border-width: 2px;
+  border-style: solid;
+  padding: 20px;
+}
+
+.submit-file {
+  display: none;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.input-label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0px 15px;
+  margin-right: 10px;
+  line-height: 34px;
+  border: 2px solid rgba(27, 59, 120, 0.79);
+  color: white;
+  background: rgba(27, 59, 120, 0.79);
+  border-radius: 6px;
+  user-select: none;
+}
